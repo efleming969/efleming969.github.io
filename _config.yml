@@ -1,0 +1,12 @@
+# General settings
+title: CommentInCode
+email: efleming969@gmail.com
+baseurl: ""
+url: ""
+twitter_username: efleming969
+github_username:  efleming969
+
+# Build settings
+markdown: kramdown
+remote_theme: tale
+plugins:
