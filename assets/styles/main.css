@@ -1,0 +1,85 @@
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+/**
+ */
+body {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    background-color: #e8e8e8;
+}
+
+a {
+    /*color: #007bff;*/
+    /*text-decoration: none;*/
+}
+
+body > header {
+    border-bottom: .1em solid #aaa;
+    background-color: #444;
+    font-family: monospace;
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+body > header h1 {
+    padding: 20px 0;
+}
+
+body > header h1 a {
+    color: lightgreen;
+    text-decoration: none;
+}
+
+body > header nav a {
+    color: #fff;
+}
+
+body > footer {
+    color: #aaa;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+article {
+    padding: 20px;
+    background-color: white;
+    margin: 30px 0;
+    box-shadow: 0 0 0 0, 0 6px 12px rgba(34, 34, 34, 0.1);
+}
+
+article > header {
+    margin-bottom: 1em;
+}
+
+article > header time {
+    color: #aaa;
+    text-transform: uppercase;
+}
+
+article p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 1em 0;
+}
+
+article ol,ul {
+    margin: 1em;
+}
+
+.highlighter-rouge {
+    background-color: black;
+    padding: 1em;
+}

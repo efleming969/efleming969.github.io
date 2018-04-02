@@ -1,12 +1,11 @@
-# General settings
+# General
 title: CommentInCode
+author: Erick Fleming
 email: efleming969@gmail.com
-baseurl: ""
-url: ""
+
+# Social
 twitter_username: efleming969
 github_username:  efleming969
 
-# Build settings
+# Build
 markdown: kramdown
-remote_theme: tale
-plugins:

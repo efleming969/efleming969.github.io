@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% assign title = page.title | default: site.title | escape %}
+    {% assign canonical = page.url | replace:'index.html','' | absolute_url %}
+    {% assign description = page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | escape %}
+
+    <title>{{ title }}</title>
+
+    <meta name="description" content="{{ description }}">
+    <meta name="keywords"
+          content="agile engineering,software engineering,programming,tdd,functional programming">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="{{ "/assets/styles/main.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/styles/syntax-dark.css" | relative_url }}">
+    <link rel="canonical" href="{{ canonical }}">
+    {% assign feed_path = "/feed.xml" %}
+    {% if site.feed and site.feed.path %}
+        {% assign feed_path = site.feed.path %}
+    {% endif %}
+</head>
+
+<body>
+    <header>
+        <h1><a href="/">/* Comments In Code */</a></h1>
+        <nav role="navigation">
+            <a href="/about">About</a>
+        </nav>
+    </header>
+    <main aria-label="Content">{{ content }}</main>
+    <footer>
+        All original writing licensed under <a
+                href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+    </footer>
+</body>
+
+</html>
