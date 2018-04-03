@@ -1,41 +1,43 @@
-/**
- * Reset some basic elements
- */
+html {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.58;
+}
+
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
     margin: 0;
     padding: 0;
 }
 
-/**
- */
-body {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    background-color: #e8e8e8;
+a {
+    text-decoration: none;
 }
 
-a {
-    /*color: #007bff;*/
-    /*text-decoration: none;*/
+body {
+    background-color: #e8e8e8;
 }
 
 body > header {
     border-bottom: .1em solid #aaa;
     background-color: #444;
     font-family: monospace;
-    font-size: 1.5em;
     width: 100%;
     text-align: center;
     padding: 10px 0;
 }
 
 body > header h1 {
-    padding: 20px 0;
+    margin-bottom: 30px;
 }
 
 body > header h1 a {
     color: lightgreen;
-    text-decoration: none;
+    font-size: 1.5em;
+}
+
+body > header nav {
+    font-size: 1em;
 }
 
 body > header nav a {
@@ -49,7 +51,8 @@ body > footer {
 }
 
 main {
-    max-width: 80%;
+    max-width: 90%;
+    width: 900px;
     margin: 0 auto;
 }
 
@@ -72,14 +75,25 @@ article > header time {
 article p {
     font-size: 1em;
     line-height: 1.5;
-    margin: 1em 0;
+    margin-top: 1.2em;
 }
 
-article ol,ul {
+article ol, ul {
     margin: 1em;
 }
 
 .highlighter-rouge {
-    background-color: black;
+    background-color: #444;
     padding: 1em;
+}
+
+pre {
+    overflow: auto;
+}
+
+@media screen and (max-width: 500px) {
+    body > header h1 a {
+        color: lightgreen;
+        font-size: .75em;
+    }
 }

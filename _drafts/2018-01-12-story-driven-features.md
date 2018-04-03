@@ -6,21 +6,21 @@ summary: A systematic approach that combines the lightweight aspects of stories 
 categories: Agile Testing
 ---
 
-The User Story practice is one of the most misunderstood concepts in Agile development.  At its core is the fundamental idea of capturing what stakeholders need through _concise_ summaries that identify the who, what, and why of some functionality.
+User Stories are one of the most misunderstood concepts in Agile development.  At its core is the fundamental idea of capturing what stakeholders need through _concise_ summaries that identify the who, what, and why of some functionality.
 
 While it sounds simple, many teams struggle to identify what level of detail to collect at the outset.  In reality, details should be captured but not until the "last responsible moment" and without adding unnecessary overhead to the development process.
 
-I suggest a more systematic approach that combines the lightweight aspects of stories with the comprehensive nature of specifications.  I'm calling it Story Driven Features.
+I suggest a more systematic approach that combines the lightweight aspects of stories with the comprehensive nature of specifications. You could call this Story Driven Features.
 
 ## Starting with Stories
 
-Stories are a mechanism for discovery and planning.  They are intended to be succinct but clear on intentions and typically evolve in an organic way.
+Stories are a mechanism for discovery and planning. They are intended to be succinct but clear on intentions and typically evolve in an organic way.
 
-We start with a basic "thinking" template that helps capture the desired functionality and potential value but lacks implementation details.
+Most teams start with a basic "thinking" template that helps capture the desired functionality and potential value, but lacks the implementation details.
 
     As a User,
     I want a password strength indicator,
-    so that I can ensure an appropriate level of security.
+    so that I can ensure my password meet the necessary restrictions before submitting
 
 Additionally, many teams drop the _user_ indication, allowing for more flexibility in the template.
 
